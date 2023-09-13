@@ -21,7 +21,6 @@
 .selectSection {
   display: flex;
   justify-content: center;
-  margin-left: auto;
 }
 .sectionHeader {
   display: flex;
