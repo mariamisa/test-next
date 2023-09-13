@@ -67,7 +67,7 @@ export default async function Page({ params: { lng } }: any) {
                 {t("k_store")}
               </Typography>
             </div>
-            <Search />
+            <Search t={t} />
             <div className={styles.selectSection}>
               <Box sx={{ mr: 1 }}>
                 <SelectLang />

@@ -2,13 +2,13 @@ import { InputAdornment, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { useTheme } from "@mui/material/styles";
 
-export default function SearchBar() {
-  const theme = useTheme()
+export default function SearchBar({ t }: any) {
+  const theme = useTheme();
 
   return (
     <TextField
       id="outlined-basic"
-      label="Search anything"
+      placeholder={t("SEARCH_PLACEHOLDER")}
       variant="outlined"
       sx={{
         width: "344px",
@@ -17,12 +17,15 @@ export default function SearchBar() {
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">
-            <SearchIcon sx={{color:theme.palette.primary.main}} fill={"secondary"}/>
+            <SearchIcon
+              sx={{ color: theme.palette.primary.main }}
+              fill={"secondary"}
+            />
           </InputAdornment>
         ),
         sx: {
           borderRadius: 25,
-          color:theme.palette.secondary.main
+          color: theme.palette.secondary.main,
         },
       }}
     />
