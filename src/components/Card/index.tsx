@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./card.module.css";
+import Link from "next/link";
+import { Box, useTheme } from "@mui/material";
 export default function Card({ imageName, label }: any) {
+  const theme = useTheme();
   return (
     <div>
       <Image
@@ -11,7 +14,11 @@ export default function Card({ imageName, label }: any) {
         alt="product"
         className={styles.image}
       />
-      <p className={styles.label}>{label}</p>
+      <Box className={styles.label}>
+        <Link color={theme.palette.secondary.main} href={"#"}>
+          {label}
+        </Link>
+      </Box>
     </div>
   );
 }

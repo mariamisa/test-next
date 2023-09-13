@@ -7,5 +7,8 @@
   "Products": "Products",
   "Offers": "Offers",
   "Contact_Us": "Contact Us",
-  "SEARCH_PLACEHOLDER":"Search anything"
+  "SEARCH_PLACEHOLDER":"Search anything",
+  "ENGLISH":"English",
+  "ARABIC":"Arabic"
+
 }

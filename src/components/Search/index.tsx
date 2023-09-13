@@ -13,15 +13,12 @@ export default function SearchBar({ t }: any) {
       sx={{
         width: "344px",
         height: "40px",
-        textAlign:"left"
+        textAlign: "left",
       }}
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">
-            <SearchIcon
-              sx={{ color: theme.palette.primary.main }}
-              fill={"secondary"}
-            />
+            <SearchIcon />
           </InputAdornment>
         ),
         sx: {

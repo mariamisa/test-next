@@ -57,6 +57,7 @@ export default function SelectComponent() {
           alignItems: "center",
           zIndex: 5555,
           background: "none",
+          fontWeight:700
         }),
       }}
       theme={(theme) => ({

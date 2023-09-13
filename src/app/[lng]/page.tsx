@@ -100,7 +100,7 @@ export default async function Page({ params: { lng } }: any) {
         </div>
         <div className={styles.productsContainer}>
           <div className={styles.sectionHeader}>
-            <p>{t("Categories")}</p>
+            <Typography sx={{ fontWeight: 600 }}>{t("Categories")}</Typography>
             <Link href={"#"} className={styles.link}>
               {t("SEE_ALL")}{" "}
               <Image src="/images/all.svg" alt="all" width={16} height={8} />
@@ -118,8 +118,13 @@ export default async function Page({ params: { lng } }: any) {
               style={{ placeSelf: "center" }}
             />
             <div className={styles.grid}>
-              {["product4", "product2", "product1", "product3"].map((el) => (
-                <Card key="el" imageName={el} label={t("ELECTRONICS")} />
+              {[
+                { imageName: "product4", textLink: t("ELECTRONICS") },
+                { imageName: "product2", textLink: t("ELECTRONICS") },
+                { imageName: "product1", textLink: t("ELECTRONICS") },
+                { imageName: "product3", textLink: t("ELECTRONICS") },
+              ].map(({ imageName, textLink }: any) => (
+                <Card key="el" imageName={imageName} label={textLink} />
               ))}
             </div>
             <Image

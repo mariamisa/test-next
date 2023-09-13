@@ -42,6 +42,7 @@ export default function SelectComponent() {
         }),
         singleValue: (base) => ({
           ...base,
+          fontWeight:700
         }),
       }}
       theme={(theme) => ({
